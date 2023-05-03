@@ -1,0 +1,161 @@
+{
+	"info": {
+		"_postman_id": "ab0a80f3-f55e-4cfd-928c-9ad4c64f83fd",
+		"name": "API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "14936223"
+	},
+	"item": [
+		{
+			"name": "GET USERS",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3001/users",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST USERS",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Nunes\",\r\n    \"email\": \"nunesfb2@gmail.com\",\r\n    \"cpf\": \"123.456.789-00\",\r\n    \"password\": \"teste\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3001/users",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UPDATE USERS",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Nunes 123\",\r\n    \"email\": \"nunesfb2@gmail.com\",\r\n    \"cpf\": \"123.456.789-00\",\r\n    \"password\": \"teste\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3001/users/6",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"users",
+						"6"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET BY ID",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiJ9.W3siaWQiOjEsIm5hbWUiOiJOdW5lcyIsImVtYWlsIjoibnVuZXNmYjJAZ21haWwuY29tIiwicGFzc3dvcmQiOiJ0ZXN0ZSIsImNwZiI6IjEyMy40NTYuNzg5LTAwIn0seyJpZCI6NiwibmFtZSI6Ik51bmVzIDEyMyIsImVtYWlsIjoibnVuZXNmYjJAZ21haWwuY29tIiwicGFzc3dvcmQiOiJ0ZXN0ZSIsImNwZiI6IjEyMy40NTYuNzg5LTAwIn0seyJpZCI6NywibmFtZSI6Ik51bmVzIiwiZW1haWwiOiJudW5lc2ZiMkBnbWFpbC5jb20iLCJwYXNzd29yZCI6InRlc3RlIiwiY3BmIjoiMTIzLjQ1Ni43ODktMDAifSx7ImlkIjo4LCJuYW1lIjoiTnVuZXMiLCJlbWFpbCI6Im51bmVzZmIyQGdtYWlsLmNvbSIsInBhc3N3b3JkIjoidGVzdGUiLCJjcGYiOiIxMjMuNDU2Ljc4OS0wMCJ9LHsiaWQiOjksIm5hbWUiOiJOdW5lcyIsImVtYWlsIjoibnVuZXNmYjJAZ21haWwuY29tIiwicGFzc3dvcmQiOiJ0ZXN0ZSIsImNwZiI6IjEyMy40NTYuNzg5LTAwIn0seyJpZCI6MTAsIm5hbWUiOiJOdW5lcyIsImVtYWlsIjoibnVuZXNmYjJAZ21haWwuY29tIiwicGFzc3dvcmQiOiJ0ZXN0ZSIsImNwZiI6IjEyMy40NTYuNzg5LTAwIn1d.3PdSEB7ewTpvRj31E08aa47RWuhOGkKEbcgFwxdAjAo",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3001/users/9",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"users",
+						"9"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE USER",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3001/users/5",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"users",
+						"5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "LOGIN",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"nunesfb2@gmail.com\",\r\n    \"password\": \"teste\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3001/users/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"users",
+						"login"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
